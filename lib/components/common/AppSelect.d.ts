@@ -10,7 +10,8 @@ interface AppSelectProps extends FieldLabelProps {
     onChange?: (value: string) => void;
     placeholder?: string;
     disabled?: boolean;
+    clearable?: boolean;
     className?: string;
 }
-export declare const AppSelect: ({ label, labelAlign, labelWidth, required, error, hint, options, value, onChange, placeholder, disabled, className, }: AppSelectProps) => import("react/jsx-runtime").JSX.Element;
+export declare const AppSelect: ({ label, labelAlign, labelWidth, required, error, hint, options, value, onChange, placeholder, disabled, clearable, className, }: AppSelectProps) => import("react/jsx-runtime").JSX.Element;
 export {};

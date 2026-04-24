@@ -3,6 +3,9 @@ import type { FieldLabelProps } from './FieldWrapper';
 interface BaseProps extends FieldLabelProps {
     placeholder?: string;
     disabled?: boolean;
+    clearable?: boolean;
+    /** single / range 모드: 텍스트 직접 입력 가능 (YYYY-MM-DD) */
+    inputable?: boolean;
 }
 interface SingleProps extends BaseProps {
     mode: 'single';
@@ -21,7 +24,7 @@ export interface YearMonth {
 interface YearMonthProps extends BaseProps {
     mode: 'year-month';
     value?: YearMonth;
-    onChange?: (value: YearMonth) => void;
+    onChange?: (value: YearMonth | undefined) => void;
 }
 export interface WeekValue {
     year: number;
@@ -30,7 +33,7 @@ export interface WeekValue {
 interface WeekProps extends BaseProps {
     mode: 'week';
     value?: WeekValue;
-    onChange?: (value: WeekValue) => void;
+    onChange?: (value: WeekValue | undefined) => void;
 }
 type AppDatePickerProps = SingleProps | RangeProps | YearMonthProps | WeekProps;
 export declare const AppDatePicker: (props: AppDatePickerProps) => import("react/jsx-runtime").JSX.Element;

@@ -1,6 +1,6 @@
 {
   "name": "@hyeonm1339/mes-ui-kit",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "type": "module",
   "description": "MES UI Kit — App*/Pop* 공통 컴포넌트 라이브러리",
   "main": "./lib/index.js",
