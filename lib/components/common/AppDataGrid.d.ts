@@ -84,6 +84,7 @@ interface AppDataGridProps<TData extends Record<string, unknown>> {
     exportFileName?: string;
     maxRows?: number;
     height?: number;
+    maxHeight?: number;
     showRowNumber?: boolean;
     /** 빈 데이터 메시지 */
     emptyMessage?: string;
@@ -95,5 +96,5 @@ interface AppDataGridProps<TData extends Record<string, unknown>> {
     columnToggle?: boolean;
     className?: string;
 }
-export declare function AppDataGrid<TData extends Record<string, unknown>>({ columns: editColumns, onColumnsChange, data, onChange, createRow, addable, deletable, reorderable, columnReorderable, columnResizable, selectable, selectedRows: controlledSelectedRows, onSelectedRowsChange, sortable, serverSort, onSortChange, filterable, serverFilter, onFilterChange, pagination, pageSize: initialPageSize, serverPagination, totalCount, onPageChange, onRowClick, onRowDoubleClick, exportable, exportFileName, maxRows, height, showRowNumber, emptyMessage, loading, rowClassName, columnToggle, className, }: AppDataGridProps<TData>): import("react/jsx-runtime").JSX.Element;
+export declare function AppDataGrid<TData extends Record<string, unknown>>({ columns: editColumns, onColumnsChange, data, onChange, createRow, addable, deletable, reorderable, columnReorderable, columnResizable, selectable, selectedRows: controlledSelectedRows, onSelectedRowsChange, sortable, serverSort, onSortChange, filterable, serverFilter, onFilterChange, pagination, pageSize: initialPageSize, serverPagination, totalCount, onPageChange, onRowClick, onRowDoubleClick, exportable, exportFileName, maxRows, height, maxHeight, showRowNumber, emptyMessage, loading, rowClassName, columnToggle, className, }: AppDataGridProps<TData>): import("react/jsx-runtime").JSX.Element;
 export {};
