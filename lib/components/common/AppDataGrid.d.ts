@@ -33,7 +33,10 @@ export interface EditableColumn<TData> {
     /** rowSpan 병합 기준 (같은 값의 인접 행 병합) */
     mergeRows?: boolean;
     /** 커스텀 렌더러 (읽기 모드) */
-    render?: (value: unknown, row: TData) => ReactNode;
+    render?: (ctx: {
+        value: unknown;
+        row: TData;
+    }) => ReactNode;
 }
 interface AppDataGridProps<TData extends Record<string, unknown>> {
     columns: EditableColumn<TData>[];
