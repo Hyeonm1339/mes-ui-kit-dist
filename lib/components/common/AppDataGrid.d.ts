@@ -85,6 +85,8 @@ interface AppDataGridProps<TData extends Record<string, unknown>> {
     exportable?: boolean;
     /** 내보내기 파일명 */
     exportFileName?: string;
+    /** 하단 바 커스텀 액션 (내보내기 버튼과 같은 줄 좌측) */
+    actions?: ReactNode;
     maxRows?: number;
     height?: number;
     maxHeight?: number;
@@ -99,5 +101,5 @@ interface AppDataGridProps<TData extends Record<string, unknown>> {
     columnToggle?: boolean;
     className?: string;
 }
-export declare function AppDataGrid<TData extends Record<string, unknown>>({ columns: editColumns, onColumnsChange, data, onChange, createRow, addable, deletable, reorderable, columnReorderable, columnResizable, selectable, selectedRows: controlledSelectedRows, onSelectedRowsChange, sortable, serverSort, onSortChange, filterable, serverFilter, onFilterChange, pagination, pageSize: initialPageSize, serverPagination, totalCount, onPageChange, onRowClick, onRowDoubleClick, exportable, exportFileName, maxRows, height, maxHeight, showRowNumber, emptyMessage, loading, rowClassName, columnToggle, className, }: AppDataGridProps<TData>): import("react/jsx-runtime").JSX.Element;
+export declare function AppDataGrid<TData extends Record<string, unknown>>({ columns: editColumns, onColumnsChange, data, onChange, createRow, addable, deletable, reorderable, columnReorderable, columnResizable, selectable, selectedRows: controlledSelectedRows, onSelectedRowsChange, sortable, serverSort, onSortChange, filterable, serverFilter, onFilterChange, pagination, pageSize: initialPageSize, serverPagination, totalCount, onPageChange, onRowClick, onRowDoubleClick, exportable, exportFileName, actions, maxRows, height, maxHeight, showRowNumber, emptyMessage, loading, rowClassName, columnToggle, className, }: AppDataGridProps<TData>): import("react/jsx-runtime").JSX.Element;
 export {};

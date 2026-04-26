@@ -48,6 +48,8 @@ export { AppNumberInput } from './AppNumberInput';
 export { AppSearchInput } from './AppSearchInput';
 export { AppTreeView } from './AppTreeView';
 export type { TreeNode } from './AppTreeView';
+export { AppDraggableTree } from './AppDraggableTree';
+export type { DraggableTreeNode, AppDraggableTreeProps } from './AppDraggableTree';
 export { AppStepper } from './AppStepper';
 export type { StepItem } from './AppStepper';
 export { AppStatCard } from './AppStatCard';
