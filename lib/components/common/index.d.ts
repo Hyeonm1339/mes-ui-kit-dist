@@ -2,6 +2,7 @@ export { AppButton } from './AppButton';
 export { AppSection } from './AppSection';
 export { AppPageLayout } from './AppPageLayout';
 export { AppForm } from './AppForm';
+export { AppFormSection } from './AppFormSection';
 export { FieldWrapper } from './FieldWrapper';
 export type { FieldLabelProps } from './FieldWrapper';
 export { AppInput } from './AppInput';

@@ -2,6 +2,7 @@ export { AppButton } from './components/common/AppButton';
 export { AppSection } from './components/common/AppSection';
 export { AppPageLayout } from './components/common/AppPageLayout';
 export { AppForm } from './components/common/AppForm';
+export { AppFormSection } from './components/common/AppFormSection';
 export { FieldWrapper } from './components/common/FieldWrapper';
 export type { FieldLabelProps } from './components/common/FieldWrapper';
 export { AppInput } from './components/common/AppInput';
