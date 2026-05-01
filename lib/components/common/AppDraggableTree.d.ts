@@ -15,12 +15,13 @@ export interface AppDraggableTreeProps {
     defaultExpanded?: string[];
     showIcons?: boolean;
     className?: string;
+    /** 허용할 최대 트리 깊이. 예: 3이면 루트·2단계·3단계까지만 허용 */
+    maxDepth?: number;
 }
 /**
  * 드래그로 노드 순서·부모를 변경할 수 있는 트리 컴포넌트.
  *
  * @example
- * const [tree, setTree] = useState(initialTree)
- * <AppDraggableTree data={tree} onChange={setTree} onSelect={(n) => console.log(n.id)} />
+ * <AppDraggableTree data={tree} onChange={setTree} maxDepth={3} onSelect={(n) => console.log(n.id)} />
  */
-export declare const AppDraggableTree: ({ data, onChange, selectedId, onSelect, defaultExpanded, showIcons, className, }: AppDraggableTreeProps) => import("react/jsx-runtime").JSX.Element;
+export declare const AppDraggableTree: ({ data, onChange, selectedId, onSelect, defaultExpanded, showIcons, className, maxDepth, }: AppDraggableTreeProps) => import("react/jsx-runtime").JSX.Element;
