@@ -79,3 +79,5 @@ export { AppComposedChart } from './AppComposedChart';
 export type { AppComposedChartProps, ComposedChartSeries } from './AppComposedChart';
 export { AppRadialChart } from './AppRadialChart';
 export type { AppRadialChartProps, RadialChartDataItem } from './AppRadialChart';
+export { AppEditor, AppEditorViewer } from './AppEditor';
+export type { AppEditorProps } from './AppEditor';

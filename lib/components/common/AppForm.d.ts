@@ -31,5 +31,5 @@ interface AppFormProps extends Omit<FormHTMLAttributes<HTMLFormElement>, 'onSubm
  *   </AppSection>
  * </AppForm>
  */
-export declare const AppForm: ({ children, onSubmit, labelAlign, labelWidth, className, ...formProps }: AppFormProps) => import("react/jsx-runtime").JSX.Element;
+export declare const AppForm: ({ children, onSubmit, labelAlign, labelWidth, labelTextAlign, className, ...formProps }: AppFormProps) => import("react/jsx-runtime").JSX.Element;
 export {};

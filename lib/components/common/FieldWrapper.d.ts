@@ -4,6 +4,8 @@ export interface FieldLabelProps {
     labelAlign?: 'left' | 'right' | 'top' | 'bottom';
     /** label 너비 (px). left/right 모드에서 라벨 고정 너비 */
     labelWidth?: number;
+    /** label 텍스트 정렬. left/right 모드에서 label 너비 내 정렬에 주로 사용 */
+    labelTextAlign?: 'left' | 'center' | 'right';
     required?: boolean;
     error?: string;
     hint?: string;
@@ -21,5 +23,5 @@ interface FieldWrapperProps extends FieldLabelProps {
  *  - 'right'  : 라벨 우측 (수평)
  *  - 'bottom' : 라벨 아래
  */
-export declare const FieldWrapper: ({ label, labelAlign: labelAlignProp, labelWidth: labelWidthProp, required, error, hint, children, className, }: FieldWrapperProps) => import("react/jsx-runtime").JSX.Element;
+export declare const FieldWrapper: ({ label, labelAlign: labelAlignProp, labelWidth: labelWidthProp, labelTextAlign: labelTextAlignProp, required, error, hint, children, className, }: FieldWrapperProps) => import("react/jsx-runtime").JSX.Element;
 export {};
