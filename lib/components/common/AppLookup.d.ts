@@ -28,4 +28,4 @@ export interface AppLookupProps extends FieldLabelProps, Omit<InputHTMLAttribute
  * 조회/선택 모달을 여는 Lookup 입력 컴포넌트입니다.
  * 모달 내부 검색 폼, 테이블, API 호출은 renderContent로 주입합니다.
  */
-export declare const AppLookup: ({ label, labelAlign, labelWidth, required, error, hint, value, codeValue, displayValue, displayFormat, title, modalSize, modalMaxHeight, modalClassName, open: controlledOpen, onOpenChange, onClear, renderContent, className, inputClassName, placeholder, disabled, readOnly, ...props }: AppLookupProps) => import("react/jsx-runtime").JSX.Element;
+export declare const AppLookup: ({ label, labelAlign, labelWidth, required, error, hint, value, codeValue, displayValue, displayFormat, title, modalSize, modalMaxHeight, modalClassName, open: controlledOpen, onOpenChange, onClear, renderContent, className, inputClassName, placeholder, disabled, readOnly, onClick, onKeyDown, ...props }: AppLookupProps) => import("react/jsx-runtime").JSX.Element;
